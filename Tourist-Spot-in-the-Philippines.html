@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome to the Philippines!</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<body>
+
+  <div class="w3-container">
+    <h1>Discover the Philippines</h1>
+  </div>
+  
+  <div class="w3-panel">
+    <h2 class="w3-opacity" > MABUHAY, as they say in the Philippines, means "WELCOME." </h2>
+    <h2 class="w3-opacity" > Southeast Asia's Philippine Islands are part of the western Pacific Ocean archipelago.  Officially called as the Republic of the Philippines, this archipelago is a nation.  More than 7,600 islands make up its more than 300.000 km2 (116,000 mi2) of total land area.  Luzon, Visayas, and Mindanao are the three main island groups that make up the Philippines.  The 17 regions that make up these island groups are further divided into 81 provinces.</h2> 
+    <h2 class="w3-opacity" >Manila, the capital of the Philippines, is one of the most populated cities in the entire world.</h2>
+  </div>
+
+
+<div class="w3-bar w3-border w3-white">
+  <button class="w3-bar-item w3-button" onclick="openCity('Siargao Island')">Siargao Island</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Batanes')">Batanes</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('La Union')">La Union</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Palawan')">Palawan</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Benguet')">Benguet</button>
+</div>
+
+
+<div id="Siargao Island" class="w3-container city">
+  <h3> SIARGAO ISLAND
+
+    "SURFING CAPITAL OF THE PHILIPINES"
+  </h2>
+  <img class="si.jpg" src="si.jpg" alt="siargao" width="1340" height="500"> <img/>
+  <p> "Siargao Island is a tropical paradise located in the Surigao del Norte province of the Philippines. This teardrop-shaped island has grown steadily in popularity over the past few years and is often known as the country's surfing capital."</p>
+</div>
+
+<div id="Batanes" class="w3-container city">
+  <h3> BATANES
+
+    "LAND OF THE TRUE INSULARS"
+  </h2>
+  <img class="ba.jpg" src="ba.jpg" alt="batanes" width="1340" height="500"> <img/>
+  <p> “It is known for its scenic waters and terrain and clean environment. Batanes is also recognized for the unique culture of the islands' first settlers, the Ivatans. Batanes is open for swimming, snorkeling, diving, lighthouse visits, biking, and visits to century-old Ivatan houses.”. </p> 
+</div>
+
+<div id="La Union" class="w3-container city">
+  <h3> LA UNION
+
+    "SURFING SPOTS"
+  </h2>
+  <img class="LU.jpg" src="LU.jpg" alt="La Union" width="1340" height="500"> <img/>
+  <p> “La Union, which translates to "The Union", was formed in 1850 by merging towns from the neighboring Provinces of Ilocos Sur, Pangasinan, and Benguet. It is a province with rich history that is known for its ancient churches and pilgrimage sites." </p>
+</div>
+
+<div id="Palawan" class="w3-container city">
+  <h3>PALAWAN 
+
+    "THE LAND OF BEAUTIFUL HARBORS"
+  </h2>
+  <img class="pal.jpg" src="pal.jpg" alt="Palawan" width="1340" height="500"> <img/>
+  <p>"Palawan is a world-renowned destination for its breathtaking land and seascapes, offering unparalleled cultural, adventure, and nature experiences. Visitors can immerse themselves in trekking through hills, valleys, and rivers, as well as snorkeling and diving in pristine waters."</p>
+</div>
+
+<div id="Benguet" class="w3-container city">
+  <h3>BENGUET
+
+    "SALAD BOWL OF THE PHILIPINES"
+  </h2>
+  <img class="be.jpg" src="be.jpg" alt="Benguet" width="1340" height="500"> <img/>
+  <p>"Benguet, Philippines, is famous for its cool climate, picturesque valleys, and impressive mountain ranges. It's home to several ethnic groups, such as the Igorots, Kankana-eys, and Ibaloi, who have preserved their customs and heritage for generations."</p>
+</div>
+
+
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+
+</body>
+</html>
